@@ -20,4 +20,8 @@ contract Mapping{
         favoritenumbertoname[_favoritenumber] = _name;
     
     }
+
+    function getarraylength() public view returns(uint256){
+        return listofpeople.length;
+    }
 }

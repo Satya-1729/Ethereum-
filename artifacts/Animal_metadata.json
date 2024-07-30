@@ -6,13 +6,32 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "favoriteNumber",
-				"outputs": [
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_Animal",
+						"type": "string"
+					}
+				],
+				"name": "addAnimal",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
 					{
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
+					}
+				],
+				"name": "listofanimals",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -23,25 +42,12 @@
 				"name": "retrieve",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "string[]",
 						"name": "",
-						"type": "uint256"
+						"type": "string[]"
 					}
 				],
 				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_favoriteNumber",
-						"type": "uint256"
-					}
-				],
-				"name": "store",
-				"outputs": [],
-				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -58,7 +64,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"simplestorage.sol": "Simple_Storage"
+			"exercise_on_array.sol": "Animal"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -72,12 +78,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"simplestorage.sol": {
-			"keccak256": "0xa28a029c73d1e99089b1c309e419221addbc3b4b09b2d007b135685a8096ce78",
+		"exercise_on_array.sol": {
+			"keccak256": "0x07f641712094f6e7789a90a6704248a1253ba828f8ac2eb9a040c8523cfb3bf8",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://84fb8c9b45ca746a3d5dea342db92265822ef012bb42e6cef92f5610da45dd0c",
-				"dweb:/ipfs/Qmb5Zm1k5uKFEyUR6bVXDxrrUtdSXC5DGjkuFug1k2oGr1"
+				"bzz-raw://08cc5bb75f7108bd17fdadb612020c0b6fd64e6a992915ec2e49355e106f88d5",
+				"dweb:/ipfs/QmQ9zPYFBYysGVVhtqUhtArJU8HFQDor4YHukGtFQ75Dy2"
 			]
 		}
 	},

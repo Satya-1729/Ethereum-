@@ -1,0 +1,91 @@
+{
+	"compiler": {
+		"version": "0.8.24+commit.e11b9ed9"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_Animal",
+						"type": "string"
+					}
+				],
+				"name": "addAnimal",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "listofanimals",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "retrieve",
+				"outputs": [
+					{
+						"internalType": "string[]",
+						"name": "",
+						"type": "string[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/exercise_on_array.sol": "Animal"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/exercise_on_array.sol": {
+			"keccak256": "0x0db644a54c09d70a5401e2b9c95e01d8b268cc53955bd3a3a47e1e513a73cbac",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://98894cd3be97d4de3d8c7137aa31cd6d5a8d1be1d2156411132bcdda2e68a088",
+				"dweb:/ipfs/QmVh1Q2cGYEDwBqAzw28juNx2LJBYWiFi4RTcWyJ1LirJ6"
+			]
+		}
+	},
+	"version": 1
+}

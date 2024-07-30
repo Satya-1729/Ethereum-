@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.25;
+pragma solidity 0.8.24;
 
 /*Create a smart contract that can store and view a list of animals. Add manually
 three (3) animals and give the possibility to the user to manually add an 

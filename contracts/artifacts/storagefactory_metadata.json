@@ -7,41 +7,22 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "favoriteNumber",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
+				"name": "createsimplestoragecontract",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "retrieve",
+				"name": "mysimplestorage",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "contract Simple_Storage",
 						"name": "",
-						"type": "uint256"
+						"type": "address"
 					}
 				],
 				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "_favoriteNumber",
-						"type": "uint256"
-					}
-				],
-				"name": "store",
-				"outputs": [],
-				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -58,7 +39,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/simplestorage.sol": "Simple_Storage"
+			"contracts/storagefactory.sol": "storagefactory"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -78,6 +59,14 @@
 			"urls": [
 				"bzz-raw://0417ba045ebb02433e0e8852862c1da7f524ffadd4bd871fb1c2728fb25012d7",
 				"dweb:/ipfs/QmZ1tX2MroMsastLjC9UN7obtQ4q6kSmR36vs5NJa6nHuR"
+			]
+		},
+		"contracts/storagefactory.sol": {
+			"keccak256": "0x8f9f12c4ac855b8d399fba4290b7b01b8622e80f28eac2ba60b456575fee9c5a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3a3be2d50fb1ce36b9a61c6741671bd2b008ae7ab67e3d8f834738e59690a068",
+				"dweb:/ipfs/QmfXAWJEGAmagedBjAKFAETkinZhfehAa9pUTtgiE29k3u"
 			]
 		}
 	},

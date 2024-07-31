@@ -6,32 +6,13 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "_Animal",
-						"type": "string"
-					}
-				],
-				"name": "addAnimal",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"name": "listofanimals",
+				"inputs": [],
+				"name": "Bird",
 				"outputs": [
 					{
-						"internalType": "string",
+						"internalType": "contract Animal",
 						"name": "",
-						"type": "string"
+						"type": "address"
 					}
 				],
 				"stateMutability": "view",
@@ -39,15 +20,22 @@
 			},
 			{
 				"inputs": [],
-				"name": "retrieve",
+				"name": "Cow",
 				"outputs": [
 					{
-						"internalType": "string[]",
+						"internalType": "contract Animal",
 						"name": "",
-						"type": "string[]"
+						"type": "address"
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "createAnimalcontract",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -64,7 +52,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/AnimalFactory.sol": "Animal"
+			"contracts/AnimalFactory.sol": "AnimalFactory"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},

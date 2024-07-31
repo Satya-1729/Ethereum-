@@ -14,11 +14,11 @@
 					},
 					{
 						"internalType": "uint256",
-						"name": "_favoritenumber",
+						"name": "_favoriteNumber",
 						"type": "uint256"
 					}
 				],
-				"name": "addperson",
+				"name": "addPerson",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -31,11 +31,16 @@
 						"type": "uint256"
 					}
 				],
-				"name": "favoritenumbertoname",
+				"name": "listOfPeople",
 				"outputs": [
 					{
+						"internalType": "uint256",
+						"name": "favoriteNumber",
+						"type": "uint256"
+					},
+					{
 						"internalType": "string",
-						"name": "",
+						"name": "name",
 						"type": "string"
 					}
 				],
@@ -43,8 +48,27 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "nameToFavoriteNumber",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [],
-				"name": "getarraylength",
+				"name": "retrieve",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -59,24 +83,13 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "_favoriteNumber",
 						"type": "uint256"
 					}
 				],
-				"name": "listofpeople",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "favoritenumber",
-						"type": "uint256"
-					},
-					{
-						"internalType": "string",
-						"name": "name",
-						"type": "string"
-					}
-				],
-				"stateMutability": "view",
+				"name": "store",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -93,7 +106,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/mapping.sol": "Mapping"
+			"contracts/Simplestorage2.sol": "SimpleStorage"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -107,12 +120,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/mapping.sol": {
-			"keccak256": "0x40ef85f5dfbcf71e2bc00f75b0a09f37c3e42b223b681a86371e046c50922a3a",
+		"contracts/Simplestorage2.sol": {
+			"keccak256": "0x3b73fc83703134ed015692e2caf29d0aea7186830adb3fea42b36895252c3910",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://91c509d5fd06f6937c448a30b88c45778ac2662c513026aa4b5bbf5e0a62fcf3",
-				"dweb:/ipfs/QmUKv3WiQW2zf5CoDPDWnwnoYoAgVFvnvr9v8QaJR7i4nT"
+				"bzz-raw://bfaefb91ebf9548979b20d5b376291cfc0008af982fccf53629c2cd5f24c5bba",
+				"dweb:/ipfs/QmQjdHbsS5quhqYbVfHnDbDYf5rdd6NqiGwHtZzp8VU9hd"
 			]
 		}
 	},

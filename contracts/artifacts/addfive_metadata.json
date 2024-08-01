@@ -1,0 +1,106 @@
+{
+	"compiler": {
+		"version": "0.8.24+commit.e11b9ed9"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "favoriteNumber",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "retrieve",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "sayhello",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "myfavnum",
+						"type": "uint256"
+					}
+				],
+				"name": "store",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/addfivestorage.sol": "addfive"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/addfivestorage.sol": {
+			"keccak256": "0xcf938b04c21bd270bf504aab53638ba33ca3d42d3d3d6113fe91c1517a0d39e3",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d6c4321d7f35bc983789331dd3ed25476f4b174beff58414b88922cf157b83fb",
+				"dweb:/ipfs/QmWo6avudSSWy9TFwoZjucH69Q8Uh92pTdX4pfKKStRMRs"
+			]
+		},
+		"contracts/simplestorage.sol": {
+			"keccak256": "0xf72546fe5ae1b3b397666a8262f18d48f6450107a733a5f2045784825caba2d2",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ec50d3f9e7f52997574af87aa57a6d319d4d76eda503d281bc75049d62b4adb7",
+				"dweb:/ipfs/QmekHYsRnA7fRvCdu5nWMNayg9T12BhiPZCGDECVwqGFJn"
+			]
+		}
+	},
+	"version": 1
+}

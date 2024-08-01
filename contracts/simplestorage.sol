@@ -5,7 +5,7 @@ pragma solidity 0.8.24;
 contract Simple_Storage{
     uint256 public favoriteNumber;
 
-    function store(uint256 _favoriteNumber) public {
+    function store(uint256 _favoriteNumber) public virtual  {
         favoriteNumber=_favoriteNumber;
     }
 

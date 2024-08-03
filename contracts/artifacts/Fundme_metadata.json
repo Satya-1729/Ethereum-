@@ -26,6 +26,19 @@
 			},
 			{
 				"inputs": [],
+				"name": "calculatesum",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "contributionCount",
 				"outputs": [
 					{
@@ -75,6 +88,13 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -113,11 +133,19 @@
 			]
 		},
 		"contracts/fundme.sol": {
-			"keccak256": "0xd1b8dd76d04510d2e1ee3c06c0f61f505851e37c57c01013a21257ddee439f8d",
+			"keccak256": "0xd7a67b0f96ab207eae182aefe9097d660676f080640f7d7e7b5e5f1c35c80b79",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c3ce5e73ddd5341571d5abcdd527799ad0dc349005fe95768cbed6da06a1b352",
-				"dweb:/ipfs/QmWn6rT8dKJqupFvqqJqx17PwKj2VZcAZPv5GoAFvHR2Nh"
+				"bzz-raw://b8f4f76521ea66a3c18b166f853c3eecb7174873e3938f5d66dc0a816d250314",
+				"dweb:/ipfs/QmQ4EcXtFg3V3YBMt4JE78SEWHXaFmEeEfjbFy6DFdeSm8"
+			]
+		},
+		"contracts/mathslibrary.sol": {
+			"keccak256": "0x6190d06094f79a861149b108c53cc73eea8b2120c2143ca8099f59925b54e807",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://936425636c143ce4742ed614df10ce0cb27ead30c119f4b72a4780404e433960",
+				"dweb:/ipfs/QmTrTZ1htJtBzk1dNkFa5rpYhgbUr8RgEvDVfNtNdMi1Te"
 			]
 		},
 		"contracts/priceconverter.sol": {

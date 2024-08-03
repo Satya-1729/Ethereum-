@@ -24,8 +24,10 @@ pragma solidity ^0.8.24;
 // instead of all this we can just import it
 
 import {priceconverter} from  "./priceconverter.sol";
+import "./mathslibrary.sol";
 
 contract Fundme{
+    using mathslibrary for uint256;
     using priceconverter for uint256;
 
     uint256 public minimumUSD =5e18;
@@ -47,6 +49,21 @@ contract Fundme{
     
     function contributionCount() public view returns(uint256){
         return funder.length;
+    }
+
+    function calculatesum() public pure returns (uint256){
+        uint256 a = 27;
+        uint256 b = 13;
+        uint256 sum = a.add(b);
+        return sum;
+
+    }
+
+    function withdraw() public {
+        for(uint256 funderIndex = 0; funderIndex<funder.length; funderIndex++){
+            address funders = funder[funderIndex];
+            addresstoAmountfunded[funders]=0;
+        }
     }
 
 }

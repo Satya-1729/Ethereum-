@@ -6,10 +6,118 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "usdAmount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "ethPrice",
+						"type": "uint256"
+					}
+				],
+				"name": "convertUsdToEth",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "fundme",
 				"outputs": [],
 				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "ethAmount",
+						"type": "uint256"
+					}
+				],
+				"name": "getConversionrate",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getDecimals",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getLatestBTCPriceInETH",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getPrice",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getVersion",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "minimumUSD",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -40,12 +148,20 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/fundme.sol": {
-			"keccak256": "0x580776184e6e425fa215356af583d0dd7d7653798f62b1f9f2eabc0b264e038a",
+		"@chainlink/contracts/src/v0.8/shared/interfaces/AggregatorV3Interface.sol": {
+			"keccak256": "0x257a8d28fa83d3d942547c8e129ef465e4b5f3f31171e7be4739a4c98da6b4f0",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://80e64e1f5f63146905bde397df0f0905c52ad4024fa01d0b5cae7909f071128f",
-				"dweb:/ipfs/QmRBbVrjAuvATNRjgHWoT85d1BDgzs5mJxvA4XYSR5G6bm"
+				"bzz-raw://6d39e11b1dc7b9b8ccdabbc9be442ab7cda4a81c748f57e316dcb1bcb4a28bf9",
+				"dweb:/ipfs/QmaG6vz6W6iEUBsbHSBob5mdcitYxWjoygxREHpsJHfWrS"
+			]
+		},
+		"contracts/fundme.sol": {
+			"keccak256": "0x25c94b79a9b8ce4a87210f76400fdcbfb341fe54fb50401ca1e23f9ada900fd2",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://04c474dc9a6a3dd5408a2af1ae6afb14fca63435a192b318a68161b6904b259b",
+				"dweb:/ipfs/QmUKUqD9QH9jdj94nfzay3oGoGcpGhqQLyZymCrcq1wPh1"
 			]
 		}
 	},

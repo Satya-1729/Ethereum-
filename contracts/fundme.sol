@@ -30,6 +30,8 @@ contract Fundme{
     using mathslibrary for uint256;
     using priceconverter for uint256;
 
+    uint256[] public pushthenumber;
+
     uint256 public minimumUSD =5e18;
 
     address[] public funder;
@@ -64,6 +66,37 @@ contract Fundme{
             address funders = funder[funderIndex];
             addresstoAmountfunded[funders]=0;
         }
+
+        // resetting the array
+        funder = new address[](0);
+
+        // actually now we withdraw the funds from this contract
+
+        // // transfer
+        // payable (msg.sender).transfer(address(this).balance); // here "this" refers to this contract; 
+
+        // // send 
+        // bool success = payable (msg.sender).send(address(this).balance);
+        // require(success,"transcation failed ");
+
+        // call
+        (bool truimph,) = payable (msg.sender).call{value:address(this).balance}(" ");
+        require (truimph,"failed call");
+
+
     }
+
+    function addingtoarray() public  {
+        for(uint256 number=0; number<10; number++){
+            pushthenumber.push(number);
+        }
+    }
+
+    function retrieve() public view returns (uint256[] memory){
+        return pushthenumber;
+    }
+
+    
+
 
 }

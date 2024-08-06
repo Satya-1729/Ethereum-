@@ -6,6 +6,13 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [],
+				"name": "addingtoarray",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -90,6 +97,38 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "pushthenumber",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "retrieve",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "withdraw",
 				"outputs": [],
@@ -133,11 +172,11 @@
 			]
 		},
 		"contracts/fundme.sol": {
-			"keccak256": "0xd7a67b0f96ab207eae182aefe9097d660676f080640f7d7e7b5e5f1c35c80b79",
+			"keccak256": "0x3f24fec2c7ef91978face8ce40f68561878b7aad25fa600236db7d8820f86de0",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b8f4f76521ea66a3c18b166f853c3eecb7174873e3938f5d66dc0a816d250314",
-				"dweb:/ipfs/QmQ4EcXtFg3V3YBMt4JE78SEWHXaFmEeEfjbFy6DFdeSm8"
+				"bzz-raw://734ceda027417417dca042d02d9b7b04415fecf778c5214e94497ace200f7d4c",
+				"dweb:/ipfs/QmYja8R4UnfsUopCFKmrUrhmAeWACTbZTan7nRDLkfo5de"
 			]
 		},
 		"contracts/mathslibrary.sol": {

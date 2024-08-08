@@ -28,22 +28,29 @@ import "./mathslibrary.sol";
 
 contract Fundme{
     using mathslibrary for uint256;
+
     using priceconverter for uint256;
 
-    uint256[] public pushthenumber;
-
-    uint256 public minimumUSD =5e18;
+    uint256 public constant MINIMUM_USD =5e18;
 
     address[] public funder;
 
+    address public immutable i_owner;
+
+    uint256 public executeAfter;
+
+    constructor() {
+        i_owner = msg.sender;
+    }
+
     mapping (address funder => uint256 amountfunded ) public addresstoAmountfunded;
 
-    function fundme () public payable {
+    function fundme () public  payable timerestricted {
         // allow user to send $
         // minimum amt to send 5$
         // 1. how do we send eth to this contract
         
-        require(msg.value.getConversionrate() > minimumUSD, "doesn't satisfy my need "); 
+        require(msg.value.getConversionrate() > MINIMUM_USD, "doesn't satisfy my need "); 
         funder.push(msg.sender);
         addresstoAmountfunded[msg.sender] = addresstoAmountfunded[msg.sender] + msg.value;
         // 1e18 = 1*1000000000000000000 = 1*10^18
@@ -53,7 +60,7 @@ contract Fundme{
         return funder.length;
     }
 
-    function calculatesum() public pure returns (uint256){
+    function calculatesum() public  view timerestricted returns (uint256)  {
         uint256 a = 27;
         uint256 b = 13;
         uint256 sum = a.add(b);
@@ -61,7 +68,8 @@ contract Fundme{
 
     }
 
-    function withdraw() public {
+    function withdraw() public onlyowner timerestricted{
+        // require(msg.sender == i_owner, "send the i_owner"); instead of this we will use the modifier
         for(uint256 funderIndex = 0; funderIndex<funder.length; funderIndex++){
             address funders = funder[funderIndex];
             addresstoAmountfunded[funders]=0;
@@ -86,17 +94,18 @@ contract Fundme{
 
     }
 
-    function addingtoarray() public  {
-        for(uint256 number=0; number<10; number++){
-            pushthenumber.push(number);
-        }
+    modifier onlyowner() {
+        require(msg.sender == i_owner,"please send the owner");
+        _;
+
     }
 
-    function retrieve() public view returns (uint256[] memory){
-        return pushthenumber;
+    modifier timerestricted(){
+        require(block.timestamp>executeAfter,"please wait for time completion");
+        _;
     }
 
-    
-
-
+    function setExecutionTime(uint256 _timeInSeconds) public onlyowner {
+        executeAfter = block.timestamp + _timeInSeconds;
+    }
 }

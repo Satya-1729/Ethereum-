@@ -7,9 +7,20 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "addingtoarray",
-				"outputs": [],
 				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "MINIMUM_USD",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -41,12 +52,25 @@
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "pure",
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
 				"inputs": [],
 				"name": "contributionCount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "executeAfter",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -85,12 +109,12 @@
 			},
 			{
 				"inputs": [],
-				"name": "minimumUSD",
+				"name": "i_owner",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "address",
 						"name": "",
-						"type": "uint256"
+						"type": "address"
 					}
 				],
 				"stateMutability": "view",
@@ -100,32 +124,13 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "_timeInSeconds",
 						"type": "uint256"
 					}
 				],
-				"name": "pushthenumber",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "retrieve",
-				"outputs": [
-					{
-						"internalType": "uint256[]",
-						"name": "",
-						"type": "uint256[]"
-					}
-				],
-				"stateMutability": "view",
+				"name": "setExecutionTime",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -172,11 +177,11 @@
 			]
 		},
 		"contracts/fundme.sol": {
-			"keccak256": "0x3f24fec2c7ef91978face8ce40f68561878b7aad25fa600236db7d8820f86de0",
+			"keccak256": "0xb7246568567ec20ef5e233a17c07691584001d9b8cd50ac8c7dde4309c07dae8",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://734ceda027417417dca042d02d9b7b04415fecf778c5214e94497ace200f7d4c",
-				"dweb:/ipfs/QmYja8R4UnfsUopCFKmrUrhmAeWACTbZTan7nRDLkfo5de"
+				"bzz-raw://58c688fbd1cf218e15946a8f28e0a478fa39ffefae28c657889f081a9b850043",
+				"dweb:/ipfs/QmcCGfg7hPqGyEgA8Dwf6QB7wD4ofKFC9EztDAbGcHrcYs"
 			]
 		},
 		"contracts/mathslibrary.sol": {

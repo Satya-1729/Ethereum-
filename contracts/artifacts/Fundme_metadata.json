@@ -12,6 +12,11 @@
 			},
 			{
 				"inputs": [],
+				"name": "notowner",
+				"type": "error"
+			},
+			{
+				"inputs": [],
 				"name": "MINIMUM_USD",
 				"outputs": [
 					{
@@ -177,11 +182,11 @@
 			]
 		},
 		"contracts/fundme.sol": {
-			"keccak256": "0xb7246568567ec20ef5e233a17c07691584001d9b8cd50ac8c7dde4309c07dae8",
+			"keccak256": "0xa1be725b22dcb04a64740f135a0d0136b8c302fe85a039547e607407742333a1",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://58c688fbd1cf218e15946a8f28e0a478fa39ffefae28c657889f081a9b850043",
-				"dweb:/ipfs/QmcCGfg7hPqGyEgA8Dwf6QB7wD4ofKFC9EztDAbGcHrcYs"
+				"bzz-raw://7ed47984e4b00f241c9fc5ec9a18d4d116f5b612e2e3f15775b33814e53ca06b",
+				"dweb:/ipfs/Qmetd7caFj9TJ7iAHF76o5QDsqZXsLfKyAWTHzqBBFeUqr"
 			]
 		},
 		"contracts/mathslibrary.sol": {

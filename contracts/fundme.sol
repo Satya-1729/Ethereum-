@@ -39,6 +39,8 @@ contract Fundme{
 
     uint256 public executeAfter;
 
+    error notowner();
+
     constructor() {
         i_owner = msg.sender;
     }
@@ -95,7 +97,10 @@ contract Fundme{
     }
 
     modifier onlyowner() {
-        require(msg.sender == i_owner,"please send the owner");
+        // require(msg.sender == i_owner,"please send the owner");
+        if(msg.sender != i_owner){
+            revert notowner(); 
+         }
         _;
 
     }

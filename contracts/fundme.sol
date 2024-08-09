@@ -113,4 +113,16 @@ contract Fundme{
     function setExecutionTime(uint256 _timeInSeconds) public onlyowner {
         executeAfter = block.timestamp + _timeInSeconds;
     }
+
+
+
+
+    receive() external payable {
+        fundme();
+    }
+
+    fallback() external payable {
+        fundme();
+    }
+
 }
